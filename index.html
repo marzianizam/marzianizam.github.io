@@ -46,42 +46,66 @@
             font-weight: bold;
         }
 
-        /* Hero Section */
-        .hero {
-            height: 90vh;
-            background: linear-gradient(135deg, #007BFF, #FFC107);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        .hero .cta-buttons a {
-            margin: 10px;
-            padding: 10px 20px;
-            background: white;
-            color: #007BFF;
-            border: none;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .hero .cta-buttons a:hover {
-            background: #FFC107;
-            color: white;
-        }
+        /* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #007BFF, #FFC107);
+    color: white;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero .cta-buttons a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero .cta-buttons a:first-child {
+    background: white;
+    color: #007BFF;
+}
+
+.hero .cta-buttons a:first-child:hover {
+    background: #FFC107;
+    color: white;
+}
+
+.hero .cta-buttons a:last-child {
+    background: #FFC107;
+    color: white;
+}
+
+.hero .cta-buttons a:last-child:hover {
+    background: white;
+    color: #007BFF;
+}
+
 
         /* Sections */
         section {
@@ -239,16 +263,29 @@ form button:hover {
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Hello, I'm Marzia</h1>
-        <p>Exploring Technology for Social Good</p>
-        <div class="cta-buttons">
-            <a href="#about">Learn About Me</a>
-            <a href="#papers">See My Work</a>
-        </div>
-    </section>
+<section class="hero" style="text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #007BFF, #FFC107); color: white;">
+    <!-- Profile Picture -->
+    <img src="your-picture.jpg" alt="Your Name" style="border-radius: 50%; width: 150px; height: 150px; border: 4px solid white; margin-bottom: 20px;">
+    
+    <!-- Introduction -->
+    <h1 style="font-size: 3rem; margin-bottom: 10px;">Hello, I'm Marzia</h1>
+    <p style="font-size: 1.2rem; margin-bottom: 20px;">
+        She/Her | PhD Student, Computer Science & Engineering, UC Santa Cruz
+    </p>
+    
+    <!-- Tagline -->
+    <p style="font-size: 1rem; margin-bottom: 30px;">
+        Exploring the intersection of technology and social good.
+    </p>
+    
+    <!-- Call-to-Action Buttons -->
+    <div class="cta-buttons">
+        <a href="#about" style="background: white; color: #007BFF; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin: 10px; display: inline-block;">Learn About Me</a>
+        <a href="#papers" style="background: #FFC107; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin: 10px; display: inline-block;">See My Work</a>
+    </div>
+</section>
 
+    
     <!-- About Me Section -->
     <section id="about">
         <h2 class="section-title">About Me</h2>
