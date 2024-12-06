@@ -47,14 +47,46 @@
             font-weight: bold;
         }
 
-    /* Hero Section Styling */
-.hero img {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
+/* Hero Section Styling */
+.hero {
+    background: #2C3E50; /* Dark background color */
+    color: white;       /* Text color */
+    padding: 100px 20px;
+    text-align: center;
 }
+
+.hero img {
+    border-radius: 50%; /* Circular image */
+    width: 200px;       /* Image size */
+    height: 200px;
+    border: 5px solid #FFC107; /* Yellow border around the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.hero h1 {
+    font-size: 4rem;       /* Larger font for name */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.hero p:nth-child(2) {
+    font-size: 1.5rem; /* Slightly larger font for the greeting */
+    color: #BFD8F4;    /* Light blue text */
+}
+
+.hero p:nth-child(5) {
+    color: #79E88C; /* Green text for academic title */
+}
+
+.hero p:nth-child(6) {
+    font-style: italic; /* Italicized tagline */
+}
+
 
 
 
@@ -216,11 +248,36 @@ form button:hover {
         </div>
     </header>
 
-<section class="hero" style="text-align: center;">
-    <!-- Static Hero Image -->
-    <img src="hero.png" alt="Marzia Binta Nizam Hero Section" 
-         style="width: 100%; height: auto; display: block;">
+<section class="hero" style="background: #2C3E50; color: white; padding: 100px 20px; text-align: center;">
+    <div style="max-width: 900px; margin: auto;">
+        <!-- Greeting -->
+        <p style="font-size: 1.5rem; margin-bottom: 10px; color: #BFD8F4;">Hello! I am</p>
+        
+        <!-- Name -->
+        <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 10px;">Marzia Binta Nizam</h1>
+        
+        <!-- Pronouns -->
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">(pronouns: she/her)</p>
+        
+        <!-- Academic Title -->
+        <p style="font-size: 1.5rem; margin-bottom: 30px; color: #79E88C;">
+            PhD Student, Computer Science & Engineering<br>
+            University of California, Santa Cruz
+        </p>
+        
+        <!-- Tagline -->
+        <p style="font-size: 1.2rem; font-style: italic; color: white;">
+            Exploring the intersection of technology and social good.
+        </p>
+        
+        <!-- Profile Image -->
+        <div style="margin-top: 40px;">
+            <img src="your-image-path.jpg" alt="Marzia Binta Nizam" 
+                 style="border-radius: 50%; width: 200px; height: 200px; border: 5px solid #FFC107; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+        </div>
+    </div>
 </section>
+
 
 
 
