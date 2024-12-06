@@ -46,65 +46,46 @@
             font-weight: bold;
         }
 
-        /* Hero Section Styling */
+       /* Hero Section Styling */
 .hero {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #007BFF, #FFC107);
+    background: #2C3E50;
     color: white;
 }
 
 .hero img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    border: 4px solid white;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
-
-.hero img:hover {
-    transform: scale(1.05);
+    width: 200px;
+    height: 200px;
+    border: 5px solid #79E88C;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Georgia', serif;
     margin-bottom: 10px;
+    color: white;
 }
 
 .hero p {
-    margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
-.hero .cta-buttons a {
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 10px;
-    transition: background 0.3s ease, color 0.3s ease;
+.hero p:last-child {
+    font-style: italic;
+    margin-top: 20px;
+    color: #FFFFFF;
 }
 
-.hero .cta-buttons a:first-child {
-    background: white;
-    color: #007BFF;
+.hero div img {
+    position: absolute;
+    z-index: 1;
 }
 
-.hero .cta-buttons a:first-child:hover {
-    background: #FFC107;
-    color: white;
-}
-
-.hero .cta-buttons a:last-child {
-    background: #FFC107;
-    color: white;
-}
-
-.hero .cta-buttons a:last-child:hover {
-    background: white;
-    color: #007BFF;
-}
 
 
         /* Sections */
@@ -263,27 +244,37 @@ form button:hover {
         </div>
     </header>
 
-<section class="hero" style="text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #007BFF, #FFC107); color: white;">
-    <!-- Profile Picture -->
-    <img src="avatar.JPG" alt="Your Name" style="border-radius: 50%; width: 150px; height: 170px; border: 4px solid white; margin-bottom: 20px;">
-    
-    <!-- Introduction -->
-    <h1 style="font-size: 3rem; margin-bottom: 10px;">Hello, I'm Marzia</h1>
-    <p style="font-size: 1.2rem; margin-bottom: 20px;">
-        She/Her | PhD Student, Computer Science & Engineering, UC Santa Cruz
-    </p>
-    
-    <!-- Tagline -->
-    <p style="font-size: 1rem; margin-bottom: 30px;">
-        Exploring the intersection of technology and social good.
-    </p>
-    
-    <!-- Call-to-Action Buttons -->
-    <div class="cta-buttons">
-        <a href="#about" style="background: white; color: #007BFF; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin: 10px; display: inline-block;">Learn About Me</a>
-        <a href="#papers" style="background: #FFC107; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin: 10px; display: inline-block;">See My Work</a>
+<section class="hero" style="display: flex; align-items: center; justify-content: center; padding: 100px 20px; background: #2C3E50; color: white;">
+    <!-- Left Text Section -->
+    <div style="flex: 1; text-align: left; padding-right: 20px;">
+        <p style="font-size: 1.2rem; color: #BFD8F4;">Hi everyone, my name is</p>
+        <h1 style="font-size: 3.5rem; margin: 10px 0; font-family: 'Georgia', serif;">Marzia Binta Nizam</h1>
+        <p style="font-size: 1.2rem; color: #79E88C; margin-bottom: 20px;">
+            PhD Student, Computer Science & Engineering<br>
+            University of California, Santa Cruz
+        </p>
+        <p style="font-size: 1.2rem; font-style: italic; color: #FFFFFF; margin-top: 20px;">
+            Exploring the intersection of technology and social good.
+        </p>
+    </div>
+
+    <!-- Right Image Section -->
+    <div style="flex: 1; text-align: center;">
+        <div style="position: relative; display: inline-block;">
+            <!-- Main Profile Image -->
+            <img src="your-picture.jpg" alt="Marzia Binta Nizam" style="border-radius: 50%; width: 200px; height: 200px; border: 5px solid #79E88C;">
+
+            <!-- Decorative Elements -->
+            <div style="position: absolute; top: -20px; right: -30px;">
+                <img src="decorative-element-1.png" alt="" style="width: 60px;">
+            </div>
+            <div style="position: absolute; bottom: -20px; left: -30px;">
+                <img src="decorative-element-2.png" alt="" style="width: 60px;">
+            </div>
+        </div>
     </div>
 </section>
+
 
     
     <!-- About Me Section -->
