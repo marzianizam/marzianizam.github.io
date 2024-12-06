@@ -146,6 +146,58 @@
     border-radius: 50%;
     border: 2px solid white;
 }
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: #007BFF;
+    color: white;
+}
+
+#contact .section-title {
+    color: white;
+    margin-bottom: 30px;
+}
+
+#contact a {
+    color: #FFC107;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact .social-links a {
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s;
+}
+
+#contact .social-links a:hover {
+    color: #FFC107;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #FFC107;
+    color: #007BFF;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: white;
+    color: #007BFF;
+    cursor: pointer;
+}
 
     </style>
 </head>
@@ -300,6 +352,33 @@
                 </ul>
             </div>
         </div>
+    </div>
+</section>
+<section id="contact" style="background: #007BFF; color: white; padding: 60px 20px;">
+    <div class="container text-center">
+        <h2 class="section-title">Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to email me or connect through my social links below.</p>
+        <div class="my-4">
+            <p><strong>Email:</strong> <a href="mailto:manizam@ucsc.edu" style="color: #FFC107; text-decoration: none;">manizam@ucsc.edu</a></p>
+            <p><strong>Location:</strong> Santa Cruz, California, USA</p>
+        </div>
+        <div class="social-links my-4">
+            <a href="https://www.linkedin.com/in/marziabnizam/" target="_blank" style="color: white; margin: 0 15px;"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/marzianizam" target="_blank" style="color: white; margin: 0 15px;"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://scholar.google.com/citations?user=ma4UGskAAAAJ&hl=en" target="_blank" style="color: white; margin: 0 15px;"><i class="fas fa-graduation-cap fa-2x"></i></a>
+        </div>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 600px; margin: 0 auto;">
+            <div class="mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Send Message</button>
+        </form>
     </div>
 </section>
 
