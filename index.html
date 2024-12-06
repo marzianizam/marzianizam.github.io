@@ -101,6 +101,52 @@
             text-align: center;
             padding: 20px;
         }
+        /* Timeline Styling */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 2px solid #007BFF;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item h4 {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.timeline-item p.text-muted {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.timeline-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.timeline-item ul li {
+    margin-bottom: 5px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #007BFF;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
     </style>
 </head>
 <body>
