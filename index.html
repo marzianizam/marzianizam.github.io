@@ -47,45 +47,53 @@
             font-weight: bold;
         }
 
-/* Hero Section Styling */
+/* Hero Section */
 .hero {
-    background: #2C3E50; /* Dark background color */
-    color: white;       /* Text color */
+    background: #2C3E50; /* Dark background */
+    color: white;
     padding: 100px 20px;
-    text-align: center;
 }
 
-.hero img {
-    border-radius: 50%; /* Circular image */
-    width: 200px;       /* Image size */
-    height: 200px;
-    border: 5px solid #FFC107; /* Yellow border around the image */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+/* Left Text Section */
+.hero div:first-child {
+    text-align: left; /* Align text to the left */
 }
 
 .hero h1 {
-    font-size: 4rem;       /* Larger font for name */
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-.hero p:nth-child(2) {
-    font-size: 1.5rem; /* Slightly larger font for the greeting */
-    color: #BFD8F4;    /* Light blue text */
+.hero p:nth-child(1) {
+    font-size: 1.5rem;
+    color: #BFD8F4; /* Light blue for greeting */
 }
 
-.hero p:nth-child(5) {
-    color: #79E88C; /* Green text for academic title */
+.hero p:nth-child(4) {
+    font-size: 1.5rem;
+    color: #79E88C; /* Green for academic info */
 }
 
-.hero p:nth-child(6) {
+.hero p:last-child {
     font-style: italic; /* Italicized tagline */
+    margin-top: 20px;
 }
+
+/* Right Image Section */
+.hero img {
+    border-radius: 50%; /* Circular image */
+    width: 300px; /* Adjust image size */
+    height: 300px;
+    border: 5px solid #FFC107; /* Yellow border */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
 
 
 
@@ -248,35 +256,32 @@ form button:hover {
         </div>
     </header>
 
-<section class="hero" style="background: #2C3E50; color: white; padding: 100px 20px; text-align: center;">
-    <div style="max-width: 900px; margin: auto;">
-        <!-- Greeting -->
-        <p style="font-size: 1.5rem; margin-bottom: 10px; color: #BFD8F4;">Hello! I am</p>
-        
-        <!-- Name -->
-        <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 10px;">Marzia Binta Nizam</h1>
-        
-        <!-- Pronouns -->
-        <p style="font-size: 1.2rem; margin-bottom: 20px;">(pronouns: she/her)</p>
-        
-        <!-- Academic Title -->
-        <p style="font-size: 1.5rem; margin-bottom: 30px; color: #79E88C;">
-            PhD Student, Computer Science & Engineering<br>
-            University of California, Santa Cruz
-        </p>
-        
-        <!-- Tagline -->
-        <p style="font-size: 1.2rem; font-style: italic; color: white;">
-            Exploring the intersection of technology and social good.
-        </p>
-        
-        <!-- Profile Image -->
-        <div style="margin-top: 40px;">
-            <img src="your-image-path.jpg" alt="Marzia Binta Nizam" 
-                 style="border-radius: 50%; width: 200px; height: 200px; border: 5px solid #FFC107; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<section class="hero" style="background: #2C3E50; color: white; padding: 100px 20px;">
+    <div style="max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between;">
+
+        <!-- Left Text Section -->
+        <div style="flex: 1; padding-right: 20px;">
+            <p style="font-size: 1.5rem; color: #BFD8F4; margin-bottom: 10px;">Hello! I am</p>
+            <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 10px;">Marzia Binta Nizam</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">(pronouns: she/her)</p>
+            <p style="font-size: 1.5rem; color: #79E88C; margin-bottom: 30px;">
+                PhD Student, Computer Science & Engineering<br>
+                University of California, Santa Cruz
+            </p>
+            <p style="font-size: 1.2rem; font-style: italic;">
+                Exploring the intersection of technology and social good.
+            </p>
         </div>
+
+        <!-- Right Image Section -->
+        <div style="flex: 1; text-align: center;">
+            <img src="avatar.jpg" alt="Marzia Binta Nizam" 
+                 style="border-radius: 50%; width: 300px; height: 300px; border: 5px solid #FFC107; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);">
+        </div>
+
     </div>
 </section>
+
 
 
 
